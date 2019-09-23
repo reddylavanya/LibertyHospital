@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scholarship Application Form</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./styles/extra.css">
+
+</head>
+
+<body>
+
+    <div class="testbox">
+        <form action="/">
+            <div class="banner">
+                <h1>Scholarship Application Form</h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+
+            <input type="button" value="Personal Information" class="navbar" /> 
+            <input type="button" value="Family information" class="navbar"/> 
+            <input type="button" value="Extra Curricular Activities" class="navbar" />
+            <input type="button" value="High School Academic Information" class="navbar" /> 
+            <input type="button" value="College Plans" class="navbar"/> 
+            <input type="button" value="Acknowledgement" class="navbar" />
+
+
+
+            <h2><b>Extra Curricular Activities</b></h2>
+            <p>Please list your participation in school (including sports, extracurricular and/or
+                academic clubs), community, church, and service organizations as well as other
+                community activities over the last four (4) years: Please indicate years of
+                involvement, offices held, honors and awards received. Please contain answers
+                to table below.
+            </p>
+
+           
+
+            <br>
+            <table id="maintable" width="100%" cellpadding="1" cellspacing="1" class="pdzn_tbl1"
+                border="#729111 1px solid">
+                <tr>
+                    <th align="center">Organization/Activity Name</th>
+                    <th align="center">School Year 2015-2016</th>
+                    <th align="center">2016-2017</th>
+                    <th align="center">2017-2018</th>
+                    <th align="center">2018-2019</th>
+                    <th align="center">Involvement/Leadership role</th>
+                </tr>
+                <tr id="rows">
+                    <div style="padding-left: 5px" >
+                        <td style="padding:5px; width: calc(200% - 20px)">
+                            <input type="text"   name="Organization/Activity Name<? $i ?>" />
+                        </td>
+                      
+                        <td style="padding:5px;">
+                            <input type="checkbox"  value="checked" />
+                            
+                        </td>
+                        <td style="padding:5px;">
+                            <input type="checkbox"  name="2016-2017<? $i ?>" />
+                        </td>
+                        <td style="padding:5px;">
+                            <input type="checkbox"  name="2017-2018<? $i ?>" />
+                        </td>
+                        <td style="padding:5px;">
+                            <input type="checkbox"  name="2018-2019<? $i ?>" />
+                        </td>
+                        <td style="padding:5px;">
+                            <input type="text"  name="Involvement/Leadership role<? $i ?>" />
+                        </td>
+                    </div>
+                </tr>
+            </table>
+            <br>
+            <a href="#" id="add_new"> Add New Row (+) </a>
+            <br>
+            <br>
+            <label>Work experience- place of employment/ years on job:</label>
+            <input type="text" id="s" width="48" />
+            <br>
+            <label>Do you plan to work during the school term?: </label>
+            <input type="text" class="workexp" width="48" />
+            &nbsp; <label>Hours per week: </label>
+            <input type="text" class="workexp"  width="48" />
+            <br>
+            <br>
+            <input type="button" class="button" onclick=window.location.href="highschool.html" value="Next"/> 
+            <input type="button" value="Save" class="button"/> 
+            <input type="button" value="Previous" onclick=window.location.href="scholarshipApplication.html" class="button"/> 
+
+        </form>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $("#add_new").click(function () {
+
+                $("#maintable").each(function () {
+
+                    var tds = '<tr>';
+                    jQuery.each($('tr:last td', this), function () {
+                        tds += '<td style="padding:5px;">' + $(this).html() + '</td>';
+                    });
+                    tds += '</tr>';
+                    if ($('tbody', this).length > 0) {
+                        $('tbody', this).append(tds);
+                    } else {
+                        $(this).append(tds);
+                    }
+                });
+            });
+
+        </script>
+
+
+
+</body>
+
+</html>
