@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta name="author" content="Midun">
+        <!-- Bootstrap required meta tags-->
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Link to CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" href="./styles/scholarship.css">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <title>LibertyHospital</title>
+    </head>
+    <body>
+        <header>
+            <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top  navBac" id="fon">
+    <div class="container">
+        <a class="navbar-brand" href="home.html"><img src="https://libertyhospitalfoundation.org/wp-content/uploads/2018/04/FinalAsset-1.png" width="200rem" height="50rem"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="#"><b>Home</b>
+                  <span class="sr-only">(current)</span>
+                </a>
+               
+          </li>
+          <li class="nav-item">
+           <!-- <a class="nav-link" href="#">Scholarship Page</a> -->
+           <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><b>Scholarship</b></a>
+            
+              
+            <div class="dropdown-menu">
+                <a href="scholarshipApplication.html" class="dropdown-item">New Application</a>
+                <a href="review-scholarship-application.html" class="dropdown-item">Review Application</a>
+                <a href="statusPage.html" class="dropdown-item">Check Status</a>
+
+            </div>
+        </div>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="./grants.html">Grants Page</a> -->
+            <div class="dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><b>Grants</b></a>
+              
+              <div class="dropdown-menu">
+                  <a href="grant.html" class="dropdown-item">New Application</a>
+                  <a href="review-scholarship-application.html" class="dropdown-item">Review Application</a>
+                  <a href="statusPage.html" class="dropdown-item">Check Status</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>Program Management</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<br>
+<br>
+    <div class="container">
+      <br>
+            <form  onsubmit="return validateForm()" action="./home.html"  id="validateForm" >
+                <div class="banner">
+                    <h1>LiveWell Grant Application Form</h1>
+                </div>
+                <br>
+                    <h3>AGENCY INFORMATION:</h3>
+                    <div class="form-group row">
+                      <label for="agency_name" class="col-sm-6 col-form-label">Name of Agency/ Agencies (list all agencies involved in project):</label>
+                      <div class="col-sm-6">
+                        <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="primary_agency" class="col-sm-2 col-form-label">Primary Agency:</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="primary_agency" placeholder="Primary Agency">
+                      </div>
+                      <label for="primary_agency_id" class="col-sm-2 col-form-label">Primary Agency Tax ID #: </label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="primary_agency_id" placeholder="Primary Agency Tax Id">
+                      </div>
+                      <label for="contact_person" class="col-sm-2 col-form-label">Contact Person:</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="primary_agency" placeholder="Contact Person">
+                      </div>
+                      <label for="primary_agency" class="col-sm-2 col-form-label">Title: </label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="primary_agency_id" placeholder="Title">
+                      </div>
+                      <label for="primary_agency" class="col-sm-2 col-form-label">Mailing Address:  </label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="primary_agency_id" placeholder="Mailing Address">
+                      </div>
+                      <label for="primary_agency" class="col-sm-1 col-form-label">Phone:  </label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="primary_agency_id" placeholder="Mailing Address">
+                      </div>
+                      <label for="primary_agency" class="col-sm-1 col-form-label">Fax: </label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="primary_agency_id" placeholder="Mailing Address">
+                      </div>
+                      <label for="primary_agency" class="col-sm-1 col-form-label">E-Mail:  </label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="primary_agency_id" placeholder="Mailing Address">
+                      </div>
+                      <label for="primary_agency" class="col-sm-6 col-form-label">Briefly summarize the mission of each agency involved in the project: </label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="primary_agency_id" placeholder="Mailing Address">
+                      </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <p>Please attach copies of the following documents with your grant application for each of the requesting agencies:</p>
+                        <br>
+                        <div class="row">
+    
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridRadios1">
+                                Latest annual report 
+                            </label>
+                          </div>
+                          <br>
+                          <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridRadios2">
+                                Current roster of Board of Directors and staff 
+                            </label>
+                          </div>
+                          <br>
+                          <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridRadios3">
+                                Latest financial audit
+                            </label>
+                          </div>
+                          <br>
+                          <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridRadios3">
+                                    Proof of organization’s active 501(c)(3) non-profit status from the Internal Revenue Service
+                                </label>
+                          </div>
+                          <br>
+                          <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridRadios3">
+                                    Last fiscal year income statement detailing sources and use of funds
+                                </label>
+                          </div>
+                          <br>
+                          <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridRadios3">
+                                    Letters of Support/ Memorandums of Agreement from collaborating agencies/ partners
+                                </label>
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </fieldset>
+                    <h3>PROJECT INFORMATION:</h3>
+                    <div class="form-group row">
+                            <label for="agency_name" class="col-sm-2 col-form-label">Project Title:</label>
+                            <div class="col-sm-10">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">Is this a new project or a continuation of a current project? </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">Have you received funding from the LiveWell Grant Program in the past? Please detail previous grant amount(s), and if outcomes from previous award(s) were met.</label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-5 col-form-label">Project Narrative/Synopsis (250 word maximum):</label>
+                            <div class="col-sm-7">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">How is this project a response to a health priority in the Liberty Hospital service area? </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">What are the main outcomes for which you are requesting support?</label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-5 col-form-label">How will outcomes be evaluated? </label>
+                            <div class="col-sm-7">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">Describe how this project is a collaborative effort (if applicable): </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">Describe how this project is a collaborative effort (if applicable): </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">Identify other sources of support for this project (indicate if funding has been secured): </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">What is the sustainability plan for this project? </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">The Liberty Hospital Half Marathon is the primary source of funds for the LiveWell Grant Program. An effort to recruit volunteers and participants, and promotion of the event is expected of awardee organizations. Please describe how your organization(s) will support and raise awareness of the event. </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <p>Please complete the following information on project beneficiaries:</p>
+                            <label for="agency_name" class="col-sm-8 col-form-label">1.	How many people will this project serve?  </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">2.	What are the socioeconomic demographics for the population served?  </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">3.	What are the age demographics for the population served? </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">4.	What are the gender demographics for the population served? </label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">5.	How are clients/ recipients of service selected or found?</label>
+                            <div class="col-sm-4">
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                            <label for="agency_name" class="col-sm-8 col-form-label">5.	How are clients/ recipients of service selected or found?</label>
+                            <div class="col-sm-4">
+                                    <input type="Name of Agency" class="form-control" id="agency" placeholder="Name">
+                            </div>
+                    </div>
+                    <fieldset class="form-group">
+                            <p>Please attach copes of the following documents with your grant application:</p>
+                            <br>
+                            <div class="row">
+        
+                            <div class="col-sm-10">
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridRadios1">
+                                        Completed budget for proposed project, with detailed income and expenses
+                                </label>
+                              </div>
+                              <br>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridRadios2">
+                                    <span>
+                                        Any additional: 
+                                    </span>
+                                </label>
+                                
+
+                              </div> 
+                            </div>
+                          </div>
+                        </fieldset>
+                    <div class="form-group row">
+                    <h3>SUBMISSION</h3>
+                      <p>With my signature I certify the following:
+                         The above information is correct; I am authorized by the governing board of this organization to submit this grant application to the Liberty Hospital Foundation;
+                          this organization is in good standing with the IRS, retains its 501(c)(3) tax-exempt status; this organization does not discriminate on the basis of race, religion, sexual preference, physical circumstances, or national origin.</p>
+                      <div class="form-group row">
+                            <br>
+                            <div class="col-sm-6">
+                                    <br>
+                                    <input type="Name of Agency" class="form-control" id="agency" placeholder="Printed Name, Head of Primary Agency	">
+                            </div>
+                            <div class="col-sm-6">
+                                    <br>
+                              <input type="Name of Agency" class="form-control" id="agency" placeholder="Title">
+                            </div>
+                            <div class="col-sm-6">
+                                    <br>
+                                    <input type="Name of Agency" class="form-control" id="agency" placeholder="Signature, Head of Primary Agency">
+                            </div>
+                            <div class="col-sm-6">
+                                    <br>
+                                    <input type="Name of Agency" class="form-control" id="agency" placeholder="Date">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="form-group row">
+                        <p><center>Please submit grant applications with all required attachments via e-mail by 12:00 p.m. on Friday, February 15 to:</p>
+                    </div>
+                    <center><button class="btn btn-lg btn-primary " type="submit" formaction="home.html">Submit</button>
+                    <!-- <button class="btn btn-lg btn-primary " type="submit" formaction="home.html">Save</button></center> -->
+                  </form>
+                  <button class="btn btn-lg btn-primary " type="save" formaction="home.html">Save</button>
+    </div>
+    <footer class="container-fluid color">
+        <hr>
+        &copy; 2019 Pratyusha and Midun
+      </footer>
+    <script src="./scripts/index.js"></script>
+          <script src="./scripts/index.js" ></script>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+              function validateForm(){
+                  //TODO: Check if email and password are valid
+                  alert("Thanks for filling the application. Your conformation number is 98765728");
+                  }
+              
+              
+          </script>
+
+
+</body>
+
+</html>

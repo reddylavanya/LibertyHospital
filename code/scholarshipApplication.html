@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <meta name="author" content="Nandini,Rishika,Lavanya">
+                <!-- Bootstrap required meta tags-->
+          <meta charset="UTF8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+          <!-- Link to CSS-->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous">
+        
+          
+          <link rel="stylesheet" href="./styles/scholarship.css">
+          <link rel="stylesheet" href="./styles/index.css">
+        
+          <title>LibertyHospital</title>
+            </head>
+            <body>
+                <header>
+                    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top  navBac" id="fon">
+            <div class="container">
+                <a class="navbar-brand" href="home.html"><img src="https://libertyhospitalfoundation.org/wp-content/uploads/2018/04/FinalAsset-1.png" width="200rem" height="50rem"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link " href="#"><b>Home</b>
+                          <span class="sr-only">(current)</span>
+                        </a>
+                       
+                  </li>
+                  <li class="nav-item">
+                   <!-- <a class="nav-link" href="#">Scholarship Page</a> -->
+                   <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><b>Scholarship</b></a>
+                    
+                      
+                    <div class="dropdown-menu">
+                        <a href="scholarshipApplication.html" class="dropdown-item">New Application</a>
+                        <a href="review-scholarship-application.html" class="dropdown-item">Review Application</a>
+                        <a href="statusPage.html" class="dropdown-item">Check Status</a>
+        
+                    </div>
+                </div>
+                  <li class="nav-item">
+                    <!-- <a class="nav-link" href="./grants.html">Grants Page</a> -->
+                    <div class="dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><b>Grants</b></a>
+                      
+                      <div class="dropdown-menu">
+                          <a href="grant.html" class="dropdown-item">New Application</a>
+                          <a href="review-scholarship-application.html" class="dropdown-item">Review Application</a>
+                          <a href="statusPage.html" class="dropdown-item">Check Status</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><b>Program Management</b></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <br>
+    <br>
+    <div class="testbox">
+        <form action="/">
+            <div class="banner">
+                <h1>Scholarship Application Form</h1>
+            </div>
+            <h2><b>I. Personal Information</b></h2>
+            <h3>Please complete the following personal information: </h3>
+            <p>
+                <div class="item">
+
+                    <div class="name-item">
+                        <p>Last Name:
+                            <input type="text" name="name" placeholder="Last Name" />
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+            </p>
+            <div class="name-item">
+                <p>First Name:
+                    <input type="text" name="name" placeholder="First Name" />
+                </p>
+            </div>
+    </div>
+    </p>
+    <div class="item">
+        <div class="city-item">
+            <p>Home Address:
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="name" placeholder="Street" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="name" placeholder="City" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="name" placeholder="State" />
+                <input type="text" name="name" placeholder="Zip Code" />
+            </p>
+        </div>
+        <div class="name-item">
+
+            <div class="name-item">
+                <p>Home Telephone Number:
+                    <input type="text" name="phone" placeholder="Last Name" />
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Cell Telephone Number:
+                    <input type="text" name="name" placeholder="First Name" />
+                </p>
+            </div>
+        </div>
+        <div class="name-item">
+
+            <div class="name-item">
+                <p>Email address:
+                    <input type="text" name="phone" placeholder="Email address" />
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Birthdate:
+                    <input type="date" name="name" />
+                    <i class="fas fa-calendar-alt"></i>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <p>How did you learn about this scholarship</p>
+            <input type="text" name="name" />
+        </div>
+
+
+        <p>Do you have any relatives employed by New Liberty Hospital District (“Liberty Hospital”) or the Liberty
+            Hospital Foundation?</p>
+        <div>
+            <!-- <label>Yes</label>&nbsp;<input type="radio"/><br> -->
+            <input type="radio" id="yes" name="neigh" value="yes" checked>
+            <label for="yes">Yes</label>
+        </div>
+        <div>
+            <input type="radio" id="No" name="neigh" value="No">
+            <label for="No">No</label>
+            <!-- <label>No</label>&nbsp;&nbsp;<input type="radio"/>     -->
+        </div>
+        <div class="item">
+            <p>If yes, please state the name(s) and relationship: </p>
+            <input type="text" name="name" />
+        </div>
+
+
+
+
+
+
+
+
+        <h2><b>II. Family information </b></h2>
+        <div class="name-item">
+
+            <div class="name-item">
+                <p>Father/Guardian full name:
+                    <input type="text" name="phone" placeholder="Father/Guardian name" />
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                </p>
+            </div>
+        </div>
+        <div class="name-item">
+
+            <div class="name-item">
+                <p>St. Address: :
+                    <input type="text" name="address" />
+                </p>
+            </div>
+        </div>
+        <div>
+            <input type="text" name="name" placeholder="City" />
+            <input type="text" name="name" placeholder="State" />
+            <input type="text" name="name" placeholder="Zip Code" />
+
+        </div>
+        <div class="name-item">
+
+            <div class="name-item">
+                <p>Mother/Guardian full name:
+                    <input type="text" name="name" placeholder="Mother/Guardian name" />
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                </p>
+            </div>
+        </div>
+
+        <div class="name-item">
+
+            <div class="name-item">
+                <p>St. Address: :
+                    <input type="text" name="address" />
+                </p>
+            </div>
+        </div>
+        <div>
+            <input type="text" name="name" placeholder="City" />
+            <input type="text" name="name" placeholder="State" />
+            <input type="text" name="name" placeholder="Zip Code" />
+
+        </div>
+
+
+        <div class="name-item">
+
+            <div class="name-item">
+                <p># of Siblings (not including applicant
+                    <input type="text" name="sibiling" />
+                </p>&nbsp;&nbsp;
+                <p># in College
+                    <input type="text" name="name" placeholder="First Name" />
+                </p>&nbsp;&nbsp;
+                <p># K-12
+                    <input type="text" name="name" placeholder="First Name" />
+                </p>
+            </div>
+        </div>
+
+        <table id="maintable" width="100%" cellpadding="1" cellspacing="1"
+        class="pdzn_tbl1"
+        border="#729111 1px solid">
+        <tr>
+        <th align="center">Siblings names</th>
+        <th align="center">If Attending College - Where and Year in School</th>
+
+        </tr>
+        <tr id="rows">
+        <div style="padding-left: 5px">
+        <td style="padding:5px;">
+        <input type="text" name="Organization/Activity Name<? $i ?>" />
+        </td>
+        <td style="padding:5px;">
+        <input type="text" id="2015-2016"  />
+
+        </td>
+        </div>
+        </tr>
+        </table>
+        <br>
+        <a href="#" id="add_new"> Add New Row (+) </a>
+        <br>
+
+        <label>Do you live with your parents?</label>
+        <input type="checkbox" id="yes" name="neigh" value="yes" checked>
+        <label for="yes">Or with a Single parent</label>
+        <input type="checkbox" id="yes" name="neigh" value="yes" checked>
+        <label for="yes">other</label>
+        <input type="checkbox" id="yes" name="neigh" value="yes" checked>
+        <label for="yes">Explain</label>
+
+
+
+
+        <input type="text" name="name" />
+
+
+                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $("#add_new").click(function () {
+
+                $("#maintable").each(function () {
+
+                    var tds = '<tr>';
+                    jQuery.each($('tr:last td', this), function () {
+                        tds += '<td style="padding:5px;">' + $(this).html() + '</td>';
+                    });
+                    tds += '</tr>';
+                    if ($('tbody', this).length > 0) {
+                        $('tbody', this).append(tds);
+                    } else {
+                        $(this).append(tds);
+                    }
+                });
+            });
+
+        </script>
+    </div>
+    <footer class="container-fluid color">
+            <hr>
+            &copy; 2019 Nandini, Rishika and Lavanya
+          </footer>
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .navBac
+  {
+    background-color:black;
+    
+      
+  }
+  #fon
+  {
+    color:black;
+  }
+  .para{
+text-align: justify;
+font-size: 1 rem
+  }
+
+.tet
+{
+  background-color: lightgray;
+  opacity:0.8;
+  color:black
+}
